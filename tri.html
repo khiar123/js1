@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <script>
+        let i = 0;
+        let j = 0;
+        var tab1 = [3, 5, 9];
+        var tab2 = [2, 6, 7];
+        var tab3 = [1, 2, 5];
+        var tab = [];
+
+
+        tab = tab1.concat(tab2);
+        tab = tab.concat(tab3);
+        tabl = tab;
+        console.log(tabl);
+        var changed;
+        do {
+            changed = false;
+            for (let i = 0; i < tab.length - 1; i++) {
+                if (tab[i] > tab[i + 1]) {
+                    var tmp = tab[i];
+                    tab[i] = tab[i + 1];
+                    tab[i + 1] = tmp;
+                    changed = true;
+                }
+            }
+        } while (changed);
+
+
+        console.log("table triee est: " + tab);
+
+        /* tab.push(tab1[j]);
+         tab.push(tab2);
+         tab.push(tab3);*/
+        /*  for (let i = 0; i < 8; i++) {
+              for (let j = 0; j < 3; j++) {*/
+        /*  for (let i = 0; i < 9; i++) {
+              do {
+                  tab[i] = tab1[j];
+
+                  j++;
+              }
+              while (j < tab1.length);*/
+
+
+        /* for (let k = 0; k < 3; k++) {
+             tab[i] = tab2[k];
+
+         }
+         for (let c = 0; c < 3; c++) {
+             tab[i] = tab3[c];
+
+
+         }*/
+    </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

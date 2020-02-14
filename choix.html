@@ -1,0 +1,100 @@
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+    <h1>user</h1>
+
+    <div>
+        nom <span id="nom"></span>
+    </div>
+
+    <div>
+        id <span id="cl"></span>
+    </div>
+
+    <div>
+        Address <span id="addr"></span>
+    </div>
+    <div>
+        email <span id="email"></span>
+    </div>
+
+
+    <form id="sub">
+        <label for="cars">Marque de voiture</label>
+        <select id="cars">
+            <option value="citroen">citroen</option>
+            <option value="Renault">Renault</option>
+            <option value="Opel">Opel</option>
+            <option value="nissan">nissan</option>
+            <option value="KIA">KIA</option>
+        </select> <br>
+        <label for="color">Couleur de votre voiture</label>
+        <select id="color">
+            <option value="Noir">noir</option>
+            <option value="Rouge">bleu</option>
+            <option value="Bleu">Blanc</option>
+            <option value="Blanc">rouge</option>
+            <option value="vert"> vert </option>
+        </select> <br>
+        <button type="submit" onclick="save()">Submit</button>
+    </form>
+
+    <script>
+        let connect = JSON.parse(localStorage.getItem("connect"));
+
+        document.getElementById("nom").innerHTML = connect.nom;
+        document.getElementById("cl").innerHTML = connect.id;
+        document.getElementById("addr").innerHTML = connect.adresse;
+        document.getElementById("email").innerHTML = connect.email;
+
+        function save() {
+
+            let connect = JSON.parse(localStorage.getItem("connect"));
+            let c = document.getElementById("cars");
+
+            let car = c.options[c.selectedIndex].value;
+
+            let col = document.getElementById("color");
+            let color = col.options[col.selectedIndex].text;
+
+
+            var idcars = Math.floor((Math.random() * 1000) + 1);
+            localst = JSON.stringify(localStorage.getItem("cars")) || [];
+
+            var voiture = {
+                marque: car,
+                couleur: color,
+                idcars: idcars,
+                idowner: connect.id
+
+
+            }
+
+
+            localst.push(voiture);
+
+            JSON.parse(localStorage.setItem("cars", localst));
+
+
+
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+
+
+
+
+</html>

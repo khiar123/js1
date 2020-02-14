@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="formulaire1.css"></link>
+    <meta charset="UTF-8">
+    <!-- <script type="text/javascript" src="formulaire1.js"></script>-->
+
+
+</head>
+
+<body>
+
+    <table>
+        <td>
+            <tr aria-rowspan="40px">
+                <td>
+                    <img src="login.jpg" width="100px" id="img">
+                </td>
+
+
+            </tr>
+            <tr rowspan="50px">
+
+                <td colspan="50px">
+                    <!--  <form class="formul" name="regform" method="POST" onsubmit="valid()"> -->
+                    <label> mail  </label> <br>
+                    <input type="mail" value="mail" name="mail" id="mail"> <br>
+
+                    <label> Password</label> <br>
+                    <input type="password" name="pass" id="pass"> <br>
+                    <button type="button" onclick="valid()"> create </button>
+                    <!--   </form> -->
+                </td>
+
+
+            </tr>
+
+
+
+
+        </td>
+
+
+
+
+    </table>
+    <script>
+        function valid() {
+            var email = document.getElementById('mail').value;
+            var pass = document.getElementById('pass').value;
+            if ((email == "") && (pass == "")) {
+                window.alert("les champs sont vide");
+
+
+
+
+            } else if (email == "") {
+
+                window.alert("mail vide");
+
+
+            } else {
+
+                window.alert("password est vide");
+
+
+            }
+
+            function mail() {
+                var res = true;
+                var reg = /@/;
+                var res = reg.test(email);
+                if (res == false) {
+                    window.alert("false mail");
+                }
+            }
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+
+</html>

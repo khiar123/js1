@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<HTML>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+        tab = [7, 10, 4, 3, 20, 15];
+        var k = 5;
+        var changed;
+        do {
+            changed = false;
+            for (let i = 0; i < tab.length - 1; i++) {
+                if (tab[i] > tab[i + 1]) {
+                    var tmp = tab[i];
+                    tab[i] = tab[i + 1];
+                    tab[i + 1] = tmp;
+                    changed = true;
+                }
+            }
+        } while (changed);
+
+        console.log(tab);
+        console.log("la keme elements et " + tab[k - 1]);
+    </script>
+
+
+
+</body>
+
+
+
+</HTML>

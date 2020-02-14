@@ -1,0 +1,22 @@
+.operateur {
+    width: 50;
+    height: 50;
+    font-size: 25;
+    margin: 2;
+    cursor: pointer;
+}
+
+#view {
+    width: 217;
+    margin: 5;
+    font-size: 25;
+    padding: 5;
+}
+
+.number {
+    width: 50;
+    height: 50;
+    font-size: 25;
+    margin: 2;
+    cursor: pointer;
+}

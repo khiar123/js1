@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+</head>
+
+<body>
+
+    <img src="login.jpg" default="logo">
+
+    <form name="formul">
+        <label>mail  </label>
+        <input type="mail" name="mail" id="mail">
+        <label>   password  </label>
+        <input type="password" id="pass">
+
+        <input type="submit" value="create" onclick="operation()">
+
+
+
+    </form>
+
+
+
+    <script>
+        function operation() {
+
+
+            var email = document.getElementById("mail").value;
+            var password = document.getElementById("pass").value;
+
+            var locst = JSON.parse(localStorage.getItem("user"));
+            //console.log(locst);
+
+            for (let i = 0; i < (locst.length - 1); i++) {
+
+                if ((email == locst[i].email) && (password == locst[i].password)) {
+
+                    localStorage.setItem("connect", JSON.stringify(locst[i]));
+                    let listconnect = JSON.parse(localStorage.getItem("connect"));
+                    window.location.replace("file:///C:/Users/Hatem/Desktop/jstravail/choix.html?mail=khiarhatem%40gmail.com");
+
+
+
+                } else {
+
+                    alert("non");
+
+
+                }
+
+
+
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+
+
+
+</html>

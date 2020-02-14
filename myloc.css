@@ -1,0 +1,14 @@
+.myform {
+    display: flex;
+    margin-left: 50px;
+    padding-left: 30;
+    line-height: 30px;
+}
+
+.myform>button {
+    margin-left: 100px;
+}
+
+.form {
+    line-height: 3;
+}

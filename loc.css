@@ -1,0 +1,15 @@
+.form {
+    padding: 20px;
+    margin: 90px;
+    display: flex;
+    inline-size: 15ex;
+    width: 300px;
+    height: 125px;
+    align-content: center;
+    margin-left: 60;
+}
+
+.form>input {
+    width: 80px;
+    outline: none;
+}

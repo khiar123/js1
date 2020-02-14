@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="register.js">
+    </script>
+
+
+</head>
+
+<body>
+    <form method="" action="">
+        <table border="1" align="center" width="600" bgcolor="#CCCCCC">
+            <caption>Registration form</caption>
+            <tr>
+                <th>Enter your first name</th>
+                <td><input type="text" name="prenom" id="prenom" maxlength="10" title="enter your first name" placeholder="enter your first name" required/></td>
+            </tr>
+            <tr>
+                <th>Enter your last name</th>
+                <td><input type="text" id="nom" /></td>
+            </tr>
+            <tr>
+                <th>Enter your password</th>
+                <td><input type="password" id="pass1" /></td>
+            </tr>
+            <tr>
+                <th>ReEnter your password</th>
+                <td><input type="password" id="pass2" /></td>
+            </tr>
+            <tr>
+                <th>Enter your email</th>
+                <td><input type="email" id="mail" /></td>
+            </tr>
+            <tr>
+                <th>Enter your mobile</th>
+                <td><input type="number" id="mobile" /></td>
+            </tr>
+            <tr>
+                <th>Enter your address</th>
+                <td><textarea rows="8" cols="20" id="adresse"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="Save My Data" onclick="saving();pass();" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="affiche"> </p>
+</body>
+
+</html>

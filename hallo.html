@@ -1,0 +1,67 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <h1 id="nombre"></h1>
+
+
+    <script>
+        var tab = ["1", "6", "9", "8"];
+        var nb;
+        var n = 3;
+        /*  for (var i = 0; i >= n; i++) {
+              if (tab[i] > tab[i + 1]) {
+                  nb = tab[i];
+              } else {
+                  nb = tab[i + 1];
+
+
+              }
+              document.getElementById('nombre').innerHTML = nb;
+
+          }
+
+          // var tab = ["1", "6", "9", "8"];
+          /* var max = 1;
+          var n = 3;
+
+          function maximuim(tab, n) {
+              for (var i = 0; i >= n; i++) {
+                  if (tab[i] > max) {
+                      max = tab[i];
+                  }
+                  maximuim = max;
+              }
+              return (maximuim);
+          }*/
+
+        // var n = 4;
+        var tab = ["3", "1", "2"];
+        var max = tab[0];
+        var n = tab.length;
+
+        function maximuim(tab, n) {
+            for (let i = 1; i <= n; i++) {
+                if (tab[i] > max) {
+                    max = tab[i];
+                }
+                return max;
+            }
+            //console.log(max)
+            // console.log(maximuim);
+            //document.getElementById('h1').innerHTML = maximuim;*/
+        }
+        console.log(maximuim(tab, n));
+    </script>
+
+
+
+</body>
+
+
+</html>
